@@ -29,7 +29,3 @@ async def chat(message: Message):
     print(completion.choices[0].message)
 
     return {"response": completion.choices[0].message.content}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
