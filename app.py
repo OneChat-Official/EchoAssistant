@@ -29,3 +29,7 @@ async def chat(message: Message):
     print(completion.choices[0].message)
 
     return {"response": completion.choices[0].message.content}
+
+@app.get("/")
+async def default():
+    return {"I'm here!"}
