@@ -11,6 +11,6 @@ class Message(BaseModel):
     content: str
 
 class NewMessageContext(BaseModel):
-    conversation_id: int
+    conversation_id: str
     messages: list[Message]
     latest_message: Message
